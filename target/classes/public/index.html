@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AREMFlix 2.0</title>
+    <link href="./style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main_heading">
+            <h1><span id="first_line">AREMFlix</span></h1>
+        </div>
+    </header>
+    <div class="top">
+        <div class="bob">
+            <img src="./bobgif.gif" />
+        </div>
+        <div class="wbox">
+            <p>Esta herramienta es un buscador de informaci&oacute;n de peliculas. Para usarlo solo ingresa el titulo
+                y podr&aacute;s conocer todos los datos sobre tus peliculas favoritas.</p>
+        </div>
+    </div>
+    <div class="aremflix">
+        <form action="/movie">
+            <label for="name">(GET)Nombre:</label><br>
+            <input type="text" id="name" name="name" value="Avengers"><br><br>
+            <input type="button" value="Search" onclick="getFetch()">
+        </form>
+    </div>
+    <div id="getrespmsg" class="response-container"></div>
+    <div class="aremflix1">
+        <form action="/movie">
+            <label for="name">(POST)Nombre:</label><br>
+            <input type="text" id="name1" name="name1" value="Avengers"><br><br>
+            <input type="button" value="Search" onclick="postFetch()">
+        </form>
+    </div>
+    <div id="postrespmsg" class="response-container"></div>
+    <script src="./app.js"></script>
+</body>
+</html>

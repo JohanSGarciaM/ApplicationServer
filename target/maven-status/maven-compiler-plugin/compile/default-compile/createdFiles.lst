@@ -1,1 +1,11 @@
-HttpServer.class
+films\Controller\Lambdaweb.class
+films\Persistence\APIPersistence.class
+films\Service\APIService.class
+films\Controller\StringService.class
+films\Controller\OMDBAPIClient.class
+films\Controller\SparkHandler.class
+films\Interface\Mediatory.class
+films\Interface\impl\ImageMediatory.class
+films\Interface\impl\TextMediatory.class
+films\Controller\HttpServer.class
+films\Interface\MovieResponse.class
